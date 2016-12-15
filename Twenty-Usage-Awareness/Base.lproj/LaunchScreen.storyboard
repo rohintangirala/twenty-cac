@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +20,52 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-photo" translatesAutoresizingMaskIntoConstraints="NO" id="09q-8U-24A">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="RealTwentyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bLW-WE-SXh">
+                                <rect key="frame" x="101" y="212" width="198" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="aZQ-2T-qgd"/>
+                                    <constraint firstAttribute="height" constant="200" id="tG0-wH-kL3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Twenty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCb-It-abe">
+                                <rect key="frame" x="87" y="70" width="202" height="67"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Easily manage screen time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpN-VX-9c0">
+                                <rect key="frame" x="95" y="155" width="264" height="21"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bLW-WE-SXh" firstAttribute="centerX" secondItem="09q-8U-24A" secondAttribute="centerX" id="4ZZ-wm-zHP"/>
+                            <constraint firstItem="09q-8U-24A" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="7Ze-Qr-l88"/>
+                            <constraint firstItem="TCb-It-abe" firstAttribute="centerX" secondItem="09q-8U-24A" secondAttribute="centerX" id="9ZR-oK-PI4"/>
+                            <constraint firstAttribute="trailing" secondItem="09q-8U-24A" secondAttribute="trailing" id="9e1-Tq-BPo"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="09q-8U-24A" secondAttribute="bottom" id="Q2e-DO-J1s"/>
+                            <constraint firstItem="DpN-VX-9c0" firstAttribute="centerX" secondItem="09q-8U-24A" secondAttribute="centerX" id="VQX-dW-srF"/>
+                            <constraint firstItem="bLW-WE-SXh" firstAttribute="top" secondItem="DpN-VX-9c0" secondAttribute="bottom" constant="50" id="dqx-m4-smt"/>
+                            <constraint firstItem="bLW-WE-SXh" firstAttribute="top" secondItem="TCb-It-abe" secondAttribute="bottom" constant="100" id="jX3-fo-Qhd"/>
+                            <constraint firstItem="09q-8U-24A" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="pbH-sw-MUB"/>
+                            <constraint firstItem="bLW-WE-SXh" firstAttribute="centerY" secondItem="09q-8U-24A" secondAttribute="centerY" id="umq-0t-i4D"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RealTwentyLogo" width="1020" height="1019"/>
+        <image name="pexels-photo" width="3500" height="2333"/>
+    </resources>
 </document>
