@@ -125,11 +125,11 @@ class ViewController: UIViewController {
         backgroundImage.image = UIImage(named: "pexels-photo")
         self.view.insertSubview(backgroundImage, at: 0)
         startStopButton.backgroundColor = UIColor(red:0.12, green:0.64, blue:0.13, alpha:1.0)
-        if let usageTimesStored : AnyObject? = defaults.object(forKey: "usageTimes") as AnyObject?? {
-            usageTimes = usageTimesStored! as! [Double]
+        if let usageTimesStored = defaults.object(forKey: "usageTimes") as AnyObject? {
+            usageTimes = usageTimesStored as! [Double]
         }
-        if let usageDatesStored : AnyObject? = defaults.object(forKey: "usageDates") as AnyObject?? {
-            usageDates = usageDatesStored! as! [String]
+        if let usageDatesStored = defaults.object(forKey: "usageDates") as AnyObject? {
+            usageDates = usageDatesStored as! [String]
         }
     }
 
